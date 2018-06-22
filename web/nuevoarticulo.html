@@ -2,28 +2,52 @@
     <head>
         <title>Nuevo articulo</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
     </head>
     <body>
         <ul>
-            <li>Inicio
-            <li>Nuevo Usuario
-            <li>Consulta Usuario
-            <li>Nuevo Articulo
-            <li>Consulta Articulo
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nuevousuario.html">Nuevo Usuario</a></li>
+            <li><a href="consultausuarios.html">Consulta Usuarios</a></li>
+            <li><a href="nuevoarticulo.html">Nuevo Artículo</a></li>
+            <li><a href="consultaarticulos.html">Consulta Artículos</a></li>
         </ul>
         
-        <p>Descripcion: <input type="text" name="description">
-        <p>Cantidad: <input type="text" name="cant">
-        <p>Precio unitario: <input type="text" name="precio">
-        
-            <br>
-        <p>Marca
-            <select>
+        <table>
+            <tr>
+                <td>Descripcion:</td>
+                <th>
+                    <input type="text" name="description" placeholder="Descripcion">
+                </th>
+            </tr>
+            <tr>
+                <td>Cantidad</td>
+                <td>
+                    <input type="text" name="cant" placeholder="Cantidad">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Precio Unitario</td>
+                <td>
+                    <input type="text" name="precio" placeholder="Precion unitario">
+                </td>
+            </tr>
+            <tr>
+                <td>Marca</td>
+                <td>
+                    <select>
                 <option value="Samsung">Samsung</option>
                 <option value="LG">LG</option>
                 <option value="Dell">Dell</option>
                 <option value="Apple">Apple</option>
                 
             </select>
+                </td>
+            </tr>
+            
+        </table>
+        
+        
     </body>
 </html>
